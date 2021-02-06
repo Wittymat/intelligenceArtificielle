@@ -35,7 +35,7 @@ final = (4,4,0)
 stack = [current]
 path = [current]
 
-while current != (4,4,0):
+while current != final:
   stack.extend(nextStates(current, states, capacities))
   if not stack:break
   current = stack.pop(0)
